@@ -11,8 +11,8 @@ class cylinderTest(unittest.TestCase):
         assert(cylinder.volume(10,100) == 31415.926535897932)
 
     #failing test
-    #def test_volume3(self):
-        #assert(cylinder.volume(10,1000) == 0)
+    def test_volume3(self):
+        assert(cylinder.volume(10,1000) == 0)
 
 
 if __name__ == '__main__':
