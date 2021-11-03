@@ -1,18 +1,20 @@
 <html>
 <head><title>Calculate Cylinder</title></head>
 <body>
+<style> .button {background-color: #00a4db; color: black; border: double;} /* Blue */ </style>
     <h3>Calculate Cylinder</h3>
 
 <form action="{{ url_for("cylinderForm")}}" method="post">
     <label for="radius">Please Enter the radius:</label>
     <input type="text" id="radius" name="rad" placeholder="radius">
+    <p></p>
 </br>
     <label for="height">Please Enter the height:</label>
     <input type="text" id="height" name="hgt" placeholder="height">
 <p></p>
-    <button type="submit">Calculate Surface Area, Volume, Lateral Surface Area, and Top or Bottom Surface Area</button>
+    <button class = "button" type="submit">Calculate Surface Area, Volume, Lateral Surface Area, and Top or Bottom Surface Area</button>
 <p></p>
-    <br><button><a href="/">Home</a></button>
+    <br><button class = "button"><a href="/">Home</a></button>
 </form>
 </body>
 </html>
