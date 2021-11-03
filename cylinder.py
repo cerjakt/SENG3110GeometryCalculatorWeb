@@ -14,19 +14,19 @@ import math
 
 def surfArea(radius, height):
     surfArea = (2 * (math.pi) * (radius) * (height)) + (2 * (math.pi) * (radius)**2)
-    return surfArea
+    return round(surfArea, 2)
 
 def volume(radius, height):
     volume = math.pi * radius * radius * height
-    return volume
+    return round(volume, 2)
 
 def latSurfArea(radius, height):
     latSurfArea = 2 * (math.pi) * (radius) * (height)
-    return latSurfArea
+    return round(latSurfArea, 2)
 
 def topBotArea(radius, height):
     topBotArea = (math.pi) * (radius)**2
-    return topBotArea
+    return round(topBotArea, 2)
 
 def prompt():
     print("------------------------------------------------------------")
@@ -35,10 +35,10 @@ def prompt():
     radius = eval(input("Please Enter the Radius: "))
     height = eval(input("Please Enter the Height: "))
     print()
-    print("The Surface Area of a Cylinder =", round(surfArea(radius, height),2 ))
-    print("The Volume of a Cylinder =", round(volume(radius, height), 2))
-    print("Lateral Surface Area of a Cylinder =", round(latSurfArea(radius, height),2 ))
-    print("Top or Bottom Surface Area of a Cylinder =", round(topBotArea(radius, height), 2))
+    print("The Surface Area of a Cylinder =", surfArea(radius, height))
+    print("The Volume of a Cylinder =", volume(radius, height))
+    print("Lateral Surface Area of a Cylinder =", latSurfArea(radius, height))
+    print("Top or Bottom Surface Area of a Cylinder =", topBotArea(radius, height))
     print("------------------------------------------------------------")
 
 if __name__ == '__main__':

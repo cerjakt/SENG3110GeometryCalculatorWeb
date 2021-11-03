@@ -14,19 +14,19 @@ import math
 
 def slant(radius, height):
     slant = math.sqrt(radius**2 + height**2)
-    return slant
+    return round(slant, 2)
 
 def surfArea(radius, height):
     surfArea = ((math.pi) * (radius)) * ((radius) + math.sqrt((height)**2 + (radius)**2))
-    return surfArea
+    return round(surfArea, 2)
 
 def volume(radius, height):
     volume = (math.pi) * (radius)**2 * (height/3)
-    return volume
+    return round(volume, 2)
 
 def latSurfArea(radius, height):
     latSurfArea = ((math.pi) * (radius)) * math.sqrt((height)**2 + (radius)**2)
-    return latSurfArea
+    return round(latSurfArea, 2)
 
 def prompt():
     print("--------------------------------------------------------")
@@ -35,10 +35,10 @@ def prompt():
     radius = eval(input("Please Enter the Radius of a Cone: "))
     height = eval(input("Please Enter the Height of a Cone: "))
     print()
-    print("Length of a Side (Slant) of a Cone =", round(slant(radius, height), 2))
-    print("The Surface Area of a Cone =", round(surfArea(radius, height), 2))
-    print("The Volume of a Cone =", round(volume(radius, height), 2))
-    print("The Lateral Surface Area of a Cone =", round(latSurfArea(radius, height),2 ))
+    print("Length of a Side (Slant) of a Cone =", slant(radius, height))
+    print("The Surface Area of a Cone =", surfArea(radius, height))
+    print("The Volume of a Cone =", volume(radius, height))
+    print("The Lateral Surface Area of a Cone =", latSurfArea(radius, height))
     print("--------------------------------------------------------")
 
 if __name__ == '__main__':

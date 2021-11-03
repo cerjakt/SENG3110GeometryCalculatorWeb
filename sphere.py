@@ -13,19 +13,19 @@ import math
 
 def volume(radius):
     volume = (4/3) * (math.pi) * (radius)**3
-    return volume
+    return round(volume, 2)
 
 def surfArea(radius):
     surfArea = 4 * (math.pi) * (radius)**2
-    return surfArea
+    return round(surfArea, 2)
 
 def prompt():
     print("----------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A SPHERE")
     print("----------------------------------------------------------")
     radius = eval(input("Please Enter the Radius: "))
-    print("The Surface Area of a Sphere =", round(surfArea(radius),2 ))
-    print("The Volume of a Sphere =", round(volume(radius), 2))
+    print("The Surface Area of a Sphere =", surfArea(radius))
+    print("The Volume of a Sphere =", volume(radius))
     print("----------------------------------------------------------")
 
 if __name__ == '__main__':
