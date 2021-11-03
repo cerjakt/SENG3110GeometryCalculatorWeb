@@ -5,10 +5,12 @@
     <h4>Please Select From the Following: </h4>
 
     <form action="{{ url_for("mainForm")}}" method="post">
+        <input type="radio" id="cylinder" name="cylinder">
+        <label for="sphere">Cylinder</label></br>
+        <input type="radio" id="cone" name="cone">
+        <label for="cone">Cone</label></br>
         <input type="radio" id="sphere" name="sphere">
         <label for="sphere">Sphere</label></br>
-        <input type="radio" id="cylinder" name="cylinder">
-        <label for="cylinder">Cylinder</label></br>
         <p></p>
         <button type="submit">Make Selection</button>
     </form>
