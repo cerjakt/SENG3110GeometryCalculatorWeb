@@ -9,8 +9,7 @@ RUN apt-get update -y
 #when running, expose port 5000
 EXPOSE 5000
 
-#depending on your local config, the copy commands may be different
-#figure it out
+#copy commands
 COPY . /SENG3110GeometryCalculatorWeb
 COPY templates /SENG3110GeometryCalculatorWeb
 
