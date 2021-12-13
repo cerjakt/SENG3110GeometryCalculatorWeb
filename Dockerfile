@@ -11,14 +11,14 @@ EXPOSE 5000
 
 #depending on your local config, the copy commands may be different
 #figure it out
-COPY . /app
-COPY templates /app
+COPY . /SENG3110GeometryCalculatorWeb
+COPY templates /SENG3110GeometryCalculatorWeb
 
 #specify to Docker build that /app is the "working directory"
-WORKDIR /app
+WORKDIR /SENG3110GeometryCalculatorWeb
 
 #run pip3 to install all requirements into the container
 RUN pip3 install -r requirements.txt
 
 #finally run the application
-CMD ["python3", "Geometry.py"]
+CMD ["python3", "GeometryCalcWeb.py"]
